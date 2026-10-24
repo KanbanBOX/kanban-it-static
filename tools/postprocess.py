@@ -9,6 +9,7 @@
   convert) into relative ones when the target exists in the mirror, and turns the rest into plain text
 - fixes ?p=NN shortlinks and malformed relative links (e.g. "it/supermarket" written inside /it/)
 - makes the WordPress 404 page (fetched by build.sh) usable as GitHub Pages' 404.html
+- moves the Privacy link from the main menu to the footer
 - replaces the root page with a redirect to /it/, like the original site
 """
 import html
@@ -21,6 +22,7 @@ import sys
 ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else "docs")
 DOMAIN_RE = r"https?:(?:\\?/){2}(?:www\.)?kanban\.it"
 HOME = "it/"
+PRIVACY = HOME + "privacy-policy/"
 
 # name.ext@query[.html|.css] -> name.ext
 ASSET_SUFFIX_RE = re.compile(
@@ -165,6 +167,16 @@ def fix_text(path, text):
             return m.group(1) + (link.split("#")[0][: -len("index.html")] or "./") + frag
         return m.group(0)
     text = re.sub(r'(href=["\'])([^"\']*)(?=["\'])', fix_relative, text)
+
+    # Privacy: out of the main menu, into the footer next to the copyright
+    text = re.sub(r'<li id="menu-item-\d+"[^>]*><a href="[^"]*privacy-policy/">Privacy</a></li>\s*', "", text)
+    if not re.search(r'>Privacy</a>\s*</div><!-- end of \.copyright -->', text):
+        text = re.sub(
+            r'(</a>\s*)(</div><!-- end of \.copyright -->)',
+            lambda m: m.group(1) + f' | <a href="{prefix}{PRIVACY}">Privacy</a>\n\t\t' + m.group(2),
+            text,
+            count=1,
+        )
     return text
 
 

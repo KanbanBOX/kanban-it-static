@@ -16,6 +16,7 @@ Lo script:
    - rimuove i riferimenti al backend WordPress (feed, oEmbed, xmlrpc, emoji), Google Analytics e il banner cookie (plugin GDPR Cookie Compliance);
    - rende relativi i link al dominio (il sito mescola `http` e `https` e `wget` non li converte tutti);
    - corregge i link `?p=NN` del menu e i link relativi scritti male (es. `it/supermarket` dentro `/it/`);
+   - sposta il link Privacy dal menu principale al footer, accanto al copyright;
    - sostituisce la home `/` con un redirect a `/it/`, come sul sito originale.
 
 Se il dominio punta già a GitHub Pages, per riscaricare il WordPress originale serve aggiungere temporaneamente a `/etc/hosts` la riga `3.123.199.162 www.kanban.it` (lo script si ferma con un avviso se il WordPress non è raggiungibile).
