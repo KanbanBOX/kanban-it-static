@@ -1,0 +1,205 @@
+	<!doctype html>
+	<!--[if !IE]>
+	<html class="no-js non-ie" lang="it-IT"> <![endif]-->
+	<!--[if IE 7 ]>
+	<html class="no-js ie7" lang="it-IT"> <![endif]-->
+	<!--[if IE 8 ]>
+	<html class="no-js ie8" lang="it-IT"> <![endif]-->
+	<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="it-IT"> <![endif]-->
+	<!--[if gt IE 9]><!-->
+<html class="no-js" lang="it-IT"> <!--<![endif]-->
+	<head>
+
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Dimensionamento kanban &#8211; Kanban</title>
+<link rel='stylesheet' id='responsive-style-css'  href='../../wp-content/themes/responsive/core/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-media-queries-css'  href='../../wp-content/themes/responsive/core/css/responsive.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-style-css'  href='../../wp-content/themes/responsive/core/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/responsive/core/js/responsive-modernizr.min.js'></script>
+<link rel="canonical" href="../../it/dimensionamentokanban/" />
+<script>
+		jQuery(document).ready(function(){
+		var copyright_text = "Sintesia SRL | P. Iva: 04264490246 | R.E.A. 391714";
+		var cyberchimps_link = "";
+		var siteurl = "http://www.kanban.it"; 
+		if(copyright_text == "")
+		{
+			jQuery(".copyright #copyright_link").text(" "+"Default copyright text");
+		}
+		else{ 
+			jQuery(".copyright #copyright_link").text(" "+copyright_text);
+		}
+		jQuery(".copyright #copyright_link").attr('href',siteurl);
+		if(cyberchimps_link == 1)
+		{
+			jQuery(".powered").css("display","block");
+		}
+		else{
+			jQuery(".powered").css("display","none");
+		}
+		});
+	</script>
+<!-- We need this for debugging -->
+<!-- Responsive 3.13 -->
+		<style type="text/css" id="wp-custom-css">
+			11111111		</style>
+		</head>
+
+<body class="page-template-default page page-id-29 default-layout">
+
+  	
+<div id="container" class="hfeed">
+
+	<div class="skip-container cf">
+		<a class="skip-link screen-reader-text focusable" href="./#content">&darr; Skip to Main Content</a>
+	</div><!-- .skip-container -->
+	<div id="header_section">
+	<div id="header" role="banner">
+
+		
+		
+		
+		
+				<div id="content-outer">
+			<div id="logo">
+				<span class="site-name"><a href="../../it/" title="Kanban" rel="home">Kanban</a></span>
+				<span class="site-description"></span>
+			</div><!-- end of #logo -->
+		</div>
+				
+				<div class="main-nav"><ul id="menu-main-menu" class="menu"><li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-51"><a href="../../it/">Kanban</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../../it/tipi-di-kanban/">Tipi di kanban</a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="../../it/supermarket/">Supermarket</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-29 current_page_item menu-item-47"><a href="../../it/dimensionamentokanban/">Dimensionamento kanban</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="../../it/kanban-elettronico/">Kanban Elettronico</a></li>
+<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="../../it/implementare-il-kanban-in-azienda/">Implementare il kanban</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../../it/contatti/">Contatti</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="../../it/privacy-policy/">Privacy</a></li>
+</ul></div>
+		
+		
+	</div><!-- end of #header -->
+	</div>
+
+
+	  
+	<div id="wrapper" class="clearfix">
+
+<div id="content-outer">
+<div id="content" class="grid col-620" role="main">
+
+	
+		
+			
+						<div id="post-29" class="post-29 page type-page status-publish hentry">
+				
+							<h1 class="entry-title post-title">Dimensionamento kanban</h1>
+	
+
+				<div class="post-entry">
+					<p>&#8216;</p>
+<p>Il dimensionamento del <strong>numero di Kanban</strong> necessari per gestire un determinato componente può essere eseguito applicando la seguente formula:</p>
+<p><img class="size-full wp-image-31 aligncenter" src="../../wp-content/uploads/dimensionamento_kanban.png" alt="Formula per il dimensionamento di un kanban" width="138" height="57" srcset="https://www.kanban.it/wp-content/uploads/dimensionamento_kanban.png 138w, ../../wp-content/uploads/dimensionamento_kanban-100x41.png 100w" sizes="(max-width: 138px) 100vw, 138px" /></p>
+<p>dove:</p>
+<ul>
+<li>C = Consumo massimo giornaliero che può verificarsi durante il lead time di ripristino</li>
+<li>LT = Lead time complessivo necessario per il ripristino</li>
+<li>Q = Numero di pezzi per contenitore o kanban (rappresenta una variabile indipendente)</li>
+</ul>
+<p>Nel caso di <strong>Batch Kanban</strong> la formula precedente si modifica nel seguente modo:</p>
+<p><img class="aligncenter wp-image-32 size-full" src="../../wp-content/uploads/batch_kanban.png" alt="Formula per il dimensionamento di un batch kanban" width="148" height="57" srcset="https://www.kanban.it/wp-content/uploads/batch_kanban.png 148w, ../../wp-content/uploads/batch_kanban-100x38.png 100w" sizes="(max-width: 148px) 100vw, 148px" /></p>
+<p>dove:</p>
+<ul>
+<li>N = Numero di cartellini Kanban necessari per coprire il lotto minimo di fornitura (LM).</li>
+</ul>
+<div>Nel caso di <strong>Kanban Double Bin</strong> il numero di cartellini è fissato (ovvero è pari a due). Pertanto la variabile da determinare diventa la quantità di pezzi da associare al contenitore o al Kanban. Quest’ultima può essere facilmente determinata girando la formula precedente:</div>
+<p><img class="aligncenter wp-image-35 size-full" src="../../wp-content/uploads/double_bin.png" alt="Formula di dimensionamento double bin" width="84" height="25" /></p>
+<p>Le formule appena viste consentono di determinare il numero minimo di Kanban necessari per gestire un certo componente. Ciò consente, a regime, di limitare al minimo le scorte di quel codice che nel caso di utilizzo del Kanban tradizionale risultano essere in media pari alla capacità di mezzo contenitore. Proviamo a dimostrare tale affermazione con un semplice esempio.</p>
+<p>Supponiamo di avere un consumo giornaliero di 10 pezzi con un Lead Time di fornitura di 4 giorni. Decidiamo che ogni Kanban contiene 10 pezzi. Applicando la formula vista prima, ciò significa che il numero totale di Kanban all’interno del sistema sarà pari a 5. Nel grafico sottostante è rappresentata l’evoluzione nel tempo della giacenza di questo componente nell’ipotesi di consumo e Lead time costanti. Come possiamo osservare il primo contenitore viene completamente esaurito al termine del primo giorno ed il suo Kanban staccato ed inviato al fornitore, il secondo kanban analogamente viene staccato  al termine del secondo giorno e così via. Al termine del quinto periodo quando anche il contenuto dell’ultimo Kanban è stato completamente esaurito si ha il rientro del primo Kanban che è stato nel frattempo ripristinato. Il giorno successivo quando esso sarà nuovamente consumato avremmo il ritorno del secondo Kanban e così via con la situazione che si stabilizza nel tempo. Quindi, in presenza di un consumo costante e di un approvvigionamento puntuale la giacenza del codice a regime oscilla formando un dente di sega di ampiezza uguale alla capienza di un contenitore con valore medio pari a mezzo contenitore.</p>
+<div id="attachment_30" style="width: 310px" class="wp-caption aligncenter"><img class="size-medium wp-image-30" src="../../wp-content/uploads/giacenza_media-300x187.png" alt="Scorta media con l’utilizzo del Kanban" width="300" height="187" srcset="https://www.kanban.it/wp-content/uploads/giacenza_media-300x187.png 300w, ../../wp-content/uploads/giacenza_media-100x62.png 100w, ../../wp-content/uploads/giacenza_media-150x93.png 150w, ../../wp-content/uploads/giacenza_media-200x125.png 200w, ../../wp-content/uploads/giacenza_media-450x281.png 450w, ../../wp-content/uploads/giacenza_media.png 500w" sizes="(max-width: 300px) 100vw, 300px" /><p class="wp-caption-text">Scorta media con l’utilizzo del Kanban</p></div>
+<p>L’esempio funziona, tuttavia, sotto le due importanti ipotesi fatte all’inizio. Nella realtà aziendale i consumi reali non sono mai perfettamente costanti, ma variano ogni giorno a seconda del numero degli ordini, del mix di produzione e dell’efficienza, ed anche il Lead Time di approvvigionamento varia a causa di problemi o ritardi. Per tali motivi <strong>è necessario lavorare incessantemente</strong> lungo due direzioni:</p>
+<ol>
+<li>Il <strong>livellamento della produzione</strong> per fare in modo che il consumo diventi il più possibile uniforme nel tempo. Se ciò non accade il sistema risulterà infatti soggetto ad oscillazioni che obbligheranno a dimensionare il numero di Kanban considerando il consumo massimo giornaliero onde evitare il rischio di stock-out.</li>
+<li>Il rispetto del <strong>Lead Time di fornitura</strong>. Se non si è in grado di garantire questa condizione sarà necessario introdurre un Lead Time di Sicurezza che genererà inevitabilmente un aumento del numero di Kanban e a catena un incremento delle scorte all’interno del sistema. Per superare questo inconveniente è necessario collaborare strettamente con i fornitori cercando di migliorarne la puntualità, la qualità e l’accuratezza della consegna.</li>
+</ol>
+<p>In definitiva tanto più ci si allontana dalla situazione ideale tanto più è necessario correggere i termini delle formule precedenti andando inevitabilmente ad aumentare le scorte medie nel sistema.</p>
+									</div><!-- end of .post-entry -->
+
+				
+
+<div class="post-edit"></div>
+							</div><!-- end of #post-29 -->
+			
+						
+
+
+
+			
+		
+</div><!-- end of #content -->
+
+
+	<div id="widgets" class="grid col-300 fit" role="complementary">
+		
+		<div id="text-2" class="widget-wrapper widget_text">			<div class="textwidget"><p><a href="https://www.sintesia.com/formazione-lean/kanban-experience-factory?utm_source=kanbanIT&utm_medium=banner&utm_campaign=KEF/" target="_blank" title="Kanban Experience Factory" onClick="recordOutboundLink(this, 'Sponsored Links', 'https://www.sintesia.com/formazione-lean/kanban-experience-factory?utm_source=kanbanIT&utm_medium=banner&utm_campaign=KEF');window.open('https://www.sintesia.com/formazione-lean/kanban-experience-factory');return false;"><img src="../../wp-content/uploads/BannerKEF2.png" border="0" alt="banner-corso-esperienziale-kanban-experience-factory" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<p><a href="http://www.kanbanbox.com?utm_source=kanbanIT&utm_medium=banner&utm_campaign=KBB" target="_blank" title="KanbanBOX - Kanban elettronico" onClick="recordOutboundLink(this, 'Sponsored Links', 'www.kanbanbox.com');window.open('http://www.kanbanbox.com');return false;"><img src="../../wp-content/uploads/Banner_KanbanBOX.it-v4.png" border="0" alt="KanbanBox - Kanban Elettronico" title="KanbanBOX - Kanban elettronico" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<p style="text-align: center;"> </p>
+<p><a href="http://www.commercialdado.it?utm_source=kanbanIT&utm_medium=banner&utm_campaign=kanbanIT" target="_blank" title="Commercial DADO - Servizio Kanban" onClick="recordOutboundLink(this, 'Sponsored Links', 'www.commercialdado.it');window.open('https://www.commercialdado.it');return false;"><img src="../../wp-content/uploads/banner-Kanban-it-animato.gif" border="0" alt="Commercial DADO - Servizio Kanban" title="Commercial DADO - Servizio Kanban" style="display: block; margin-left: auto; margin-right: auto;" /></a></p>
+<p style="text-align: center;"> </p>
+<p><a href="https://shop.famispa.com/?utm_source=kanbanIT&utm_medium=banner&utm_campaign=KanbanIT" target="_blank" title="Fami - Storage Systems" onClick="recordOutboundLink(this, 'Sponsored Links', 'https://shop.famispa.com/');window.open('https://shop.famispa.com/');return false;"><img src="../../wp-content/uploads/GIF_Fami.gif" border="0" alt="Fami - Storage Systems" title="Fami - Storage Systems" style="display: block; margin-left: auto; margin-right: auto;" /></a></p></div>
+		</div>
+			</div><!-- end of #widgets -->
+</div>
+</div><!-- end of #wrapper -->
+
+	 
+</div><!-- end of #container -->
+
+<div id="footer" class="clearfix" role="contentinfo">
+	
+	<div id="footer-wrapper">
+		
+		 <!--   main-->
+		
+		<div id="content-outer">			
+				</div>
+		<div id="content-outer">
+		<div class="grid col-940">
+
+			<div class="grid col-540">
+							</div><!-- end of col-540 -->
+
+			<div class="grid col-380 fit">
+				<ul class="social-icons"></ul><!-- .social-icons -->			</div><!-- end of col-380 fit -->
+
+		</div><!-- end of col-940 -->
+		
+		<div class="grid col-300 copyright">
+			© 2026<a id="copyright_link" href="../../it/" title="Kanban">
+				Kanban			</a>
+		</div><!-- end of .copyright -->
+
+		<div class="grid col-300 scroll-top"><!--<a href="#scroll-top" title="vai in alto">↑</a>
+		<div id="scroll-to-top"><span class="glyphicon glyphicon-chevron-up"></span></div>--></div>
+
+		<div class="grid col-300 fit powered">
+			<a href="http://cyberchimps.com/responsive-theme/" title="Responsive Theme" rel="noindex, nofollow">Responsive Theme</a>
+			Prodotto da <a href="http://wordpress.org/" title="WordPress">
+				WordPress</a>
+		</div><!-- end .powered -->
+	</div>
+		
+	</div><!-- end #footer-wrapper -->
+
+	</div><!-- end #footer -->
+<div id="scroll" title="Scroll to Top" style="display: block;">Top<span></span></div>
+<script type='text/javascript' src='../../wp-content/themes/responsive/core/js/responsive-scripts.min.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/responsive/core/js/jquery.placeholder.min.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>
