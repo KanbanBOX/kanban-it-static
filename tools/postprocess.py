@@ -139,6 +139,17 @@ def fix_text(path, text):
         return m.group(1) + m.group(2) + prefix + target + ("#" + anchor if anchor else "")
     text = re.sub(r'((?:href|src)=)(["\'])' + DOMAIN_RE + r'(/[^"\']*)?(?=["\'])', abs_to_rel, text)
 
+    # same for each candidate in srcset="url 300w, url 100w, ..."
+    def srcset_to_rel(m):
+        def one(c):
+            c = c.strip()
+            url, _, size = c.partition(" ")
+            u = re.match(DOMAIN_RE + r"(/.*)", url)
+            target = local_target(u.group(1)) if u else None
+            return (prefix + target if target else url) + (" " + size if size else "")
+        return m.group(1) + ", ".join(one(c) for c in m.group(3).split(",")) + m.group(2)
+    text = re.sub(r'(srcset=(["\']))([^"\']*)\2', srcset_to_rel, text)
+
     # remaining links to pages of the original domain that don't exist here -> plain text
     text = re.sub(
         r'<a\s[^>]*href=["\']' + DOMAIN_RE + r'/[^"\']*["\'][^>]*>(.*?)</a>',
